@@ -1,7 +1,9 @@
 <template>
   <div class="relative max-w-[1440px] mx-auto">
     <Navbar />
-    <router-view/>
+    <div class="translate-y-[93px]">
+      <router-view/>
+    </div>
   </div>
 </template>
 

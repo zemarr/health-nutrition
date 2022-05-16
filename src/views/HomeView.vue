@@ -1,5 +1,5 @@
 <template>
-  <div class="home translate-y-[93px]">
+  <div class="home">
     <section class="relative hero w-full grid lg:grid-cols-2 grid-cols-1 bg-greenDark">
       <div class="left xl:ml-[180px] lg:ml-[90px] md:ml-[35px] mx-6">
         <div class="max-w-[443px] py-[120px]">
