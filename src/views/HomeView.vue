@@ -87,7 +87,7 @@
               <span class="h-[104px] w-[184px]">
                 <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
               </span>
-              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+              <div class="bg-greenDark10 h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
                 <p class="font-bold lg:text-[20px] text-[16px]">Exclusive <span class="text-brandGreen">up to -50%</span> <br> Member Discounts</p>
               </div>
             </div>
@@ -95,7 +95,7 @@
               <span class="h-[104px] w-[184px]">
                 <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
               </span>
-              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+              <div class="bg-greenDark10 h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
                 <p class="font-bold lg:text-[20px] text-[16px]">Special Offers &<br/> Product Launches</p>
               </div>
             </div>
@@ -103,7 +103,7 @@
               <span class="h-[104px] w-[184px]">
                 <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
               </span>
-              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+              <div class="bg-greenDark10 h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
                 <p class="font-bold lg:text-[20px] text-[16px]">Supporting Community<br/> and Wellness Coaches</p>
               </div>
             </div>
@@ -117,7 +117,7 @@
               <span class="h-[104px] w-[184px]">
                 <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
               </span>
-              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+              <div class="bg-greenDark10 h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
                 <p class="font-bold lg:text-[20px] text-[16px]">Unique Articles <br> & Video Content</p>
               </div>
             </div>
@@ -125,7 +125,7 @@
               <span class="h-[104px] w-[184px]">
                 <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
               </span>
-              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+              <div class="bg-greenDark10 h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
                 <p class="font-bold lg:text-[20px] text-[16px]">Personalized Diet <br> and Exercise Plans</p>
               </div>
             </div>
@@ -133,7 +133,7 @@
               <span class="h-[104px] w-[184px]">
                 <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
               </span>
-              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+              <div class="bg-greenDark10 h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
                 <p class="font-bold lg:text-[20px] text-[16px]">Premium Guides <br> Made by Pros</p>
               </div>
             </div>
@@ -143,12 +143,42 @@
         </div>
       </div>
     </section>
-    <section class="py-[]">
+    <section class="pt-[40px] pb-[100px] bg-greenDark3">
       <div class="relative xl:mx-[180px] lg:mx-[90px] md:mx-[35px] mx-6">
-        <h4 class="font-light text-brandGreen text-[32px] leading-[38.4px] text-center">Shop by <b>Goal</b></h4>
-        <div class="grid grid-cols-3 gap-8">
-          <div class="relative ">
-
+        <h4 class="font-light text-brandGreen text-[32px] leading-[38.4px] text-center mb-[30px]">Shop by <b>Goal</b></h4>
+        <div class="grid grid-cols-3 gap-12">
+          <div class="relative w-full">
+            <img src="../assets/weightlossimg.webp" alt="" width="100%" height="100%">
+            <div class="absolute top-[42px] left-[59px] text-[32px] leading-[38.4px] text-white flex items-center">Weight loss
+              <span class="text-white">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
+                </svg>
+              </span>
+            </div>
+            <img src="../assets/appleweightloss.webp" alt="" width="100%" height="100%" class="w-[230px] absolute -bottom-[50px] -right-[30px]">
+          </div>
+          <div class="relative w-full">
+            <img src="../assets/workoutsimg.webp" alt="" width="100%" height="100%">
+            <div class="absolute top-[42px] left-[59px] text-[32px] leading-[38.4px] text-white flex items-center">Workouts
+              <span class="text-white">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
+                </svg>
+              </span>
+            </div>
+            <img src="../assets/workoutstools.webp" alt="" width="100%" height="100%" class="w-[300px] absolute -bottom-[50px] -right-[30px]">
+          </div>
+          <div class="relative w-full">
+            <img src="../assets/bodybuildingimg.webp" alt="" width="100%" height="100%">
+            <div class="absolute top-[42px] left-[59px] text-[32px] leading-[38.4px] text-white flex items-center">Bodybuilding
+              <span class="text-white">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
+                </svg>
+              </span>
+            </div>
+            <img src="../assets/dumbells.webp" alt="" width="100%" height="100%" class="w-[252px] absolute -bottom-[50px] -right-[30px]">
           </div>
         </div>
       </div>

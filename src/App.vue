@@ -1,5 +1,5 @@
 <template>
-  <div class="relative max-w-[1440px] mx-auto">
+  <div class="relative max-w-[1440px] mx-auto h-[max-content]">
     <Navbar />
     <div class="translate-y-[93px]">
       <router-view/>
