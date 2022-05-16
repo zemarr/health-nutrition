@@ -1,8 +1,8 @@
 <template>
-  <div class="relative w-full">
+  <div class="relative max-w-[1440px] mx-auto">
     <Navbar />
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <script>

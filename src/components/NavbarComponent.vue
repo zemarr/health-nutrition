@@ -1,7 +1,7 @@
 <template>
-  <nav class="w-full fixed top-0 left-0 z-[1000] bg-white" :class="[scrollPosition < 1 ? '' : 'shadow-lg']">
+  <nav class="w-full fixed top-0 left-0 z-[1000] bg-white xl:px-[180px] lg:px-[90px] md:px-[35px] px-6" :class="[scrollPosition < 1 ? '' : 'shadow-lg']">
     <section class="header py-[10px]">
-      <div class="xl:mx-[180px] lg:mx-[90px] md:mx-[35px] mx-6 flex items-center lg:justify-end justify-between">
+      <div class="max-w-[1440px] mx-auto flex items-center lg:justify-end justify-between">
         <button class="search flex items-center lg:hidden">
           <span class="text-black font-bold h-3 w-3 mr-2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -14,7 +14,7 @@
       </div>
     </section>
     <section class="navigation py-3">
-      <div class="xl:mx-[180px] lg:mx-[90px] md:mx-[35px] mx-6">
+      <div class="max-w-[1440px] mx-auto">
         <div class="grid grid-cols-2 gap-8">
           <div class="left flex items-center justify-between">
             <Logo />

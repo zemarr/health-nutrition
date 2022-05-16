@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home translate-y-[93px]">
     <section class="relative hero w-full grid lg:grid-cols-2 grid-cols-1 bg-greenDark">
       <div class="left xl:ml-[180px] lg:ml-[90px] md:ml-[35px] mx-6">
         <div class="max-w-[443px] py-[120px]">
@@ -146,6 +146,11 @@
     <section class="py-[]">
       <div class="relative xl:mx-[180px] lg:mx-[90px] md:mx-[35px] mx-6">
         <h4 class="font-light text-brandGreen text-[32px] leading-[38.4px] text-center">Shop by <b>Goal</b></h4>
+        <div class="grid grid-cols-3 gap-8">
+          <div class="relative ">
+
+          </div>
+        </div>
       </div>
     </section>
   </div>
