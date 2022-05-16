@@ -80,20 +80,72 @@
     <section class="py-[96px]">
       <div class="relative xl:mx-[180px] lg:mx-[90px] md:mx-[35px] mx-6">
         <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
-          <div class="left">
+          <div class="left flex flex-col items-center justify-center">
             <h3 class="font-light text-[32px] text-brandGreen leading-[38.4px] text-center mb-[4px]">Member Benefits</h3>
             <p class="font-light text-[18px] leading-[18px] text-center">To help you achieve your change</p>
             <div class="max-h-[104px] w-full flex items-center mt-6">
-              <span>
-                <img src="../assets/member-benefits1.jpeg" alt="" class="w-[184px] h-full">
+              <span class="h-[104px] w-[184px]">
+                <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
               </span>
-              <div>
-                <p class="font-bold text-[20px]">Exclusive up to -50% <br> Member Discounts</p>
+              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+                <p class="font-bold lg:text-[20px] text-[16px]">Exclusive <span class="text-brandGreen">up to -50%</span> <br> Member Discounts</p>
               </div>
             </div>
+            <div class="max-h-[104px] w-full flex items-center mt-6">
+              <span class="h-[104px] w-[184px]">
+                <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
+              </span>
+              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+                <p class="font-bold lg:text-[20px] text-[16px]">Special Offers &<br/> Product Launches</p>
+              </div>
+            </div>
+            <div class="max-h-[104px] w-full flex items-center mt-6">
+              <span class="h-[104px] w-[184px]">
+                <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
+              </span>
+              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+                <p class="font-bold lg:text-[20px] text-[16px]">Supporting Community<br/> and Wellness Coaches</p>
+              </div>
+            </div>
+            <button class="w-full my-2 text-[16px] leading-[16px] font-bold">+ much more</button>
+
           </div>
-          <div class="right"></div>
+          <div class="right">
+            <h3 class="font-light text-[32px] text-brandGreen leading-[38.4px] text-center mb-[4px]">Tools & Resources</h3>
+            <p class="font-light text-[18px] leading-[18px] text-center">To help you be your best</p>
+            <div class="max-h-[104px] w-full flex items-center mt-6">
+              <span class="h-[104px] w-[184px]">
+                <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
+              </span>
+              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+                <p class="font-bold lg:text-[20px] text-[16px]">Unique Articles <br> & Video Content</p>
+              </div>
+            </div>
+            <div class="max-h-[104px] w-full flex items-center mt-6">
+              <span class="h-[104px] w-[184px]">
+                <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
+              </span>
+              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+                <p class="font-bold lg:text-[20px] text-[16px]">Personalized Diet <br> and Exercise Plans</p>
+              </div>
+            </div>
+            <div class="max-h-[104px] w-full flex items-center mt-6">
+              <span class="h-[104px] w-[184px]">
+                <img src="../assets/member-benefits1.jpeg" alt="" width="100%" height="100%" class="w-full h-full">
+              </span>
+              <div class="bg-greenDark h-[104px] py-[24px] lg:pl-[48px] pl-[20px] w-[344px] rounded-lg">
+                <p class="font-bold lg:text-[20px] text-[16px]">Premium Guides <br> Made by Pros</p>
+              </div>
+            </div>
+            <button class="w-full my-2 text-[16px] leading-[16px] font-bold">+ much more</button>
+
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="py-[]">
+      <div class="relative xl:mx-[180px] lg:mx-[90px] md:mx-[35px] mx-6">
+        <h4 class="font-light text-brandGreen text-[32px] leading-[38.4px] text-center">Shop by <b>Goal</b></h4>
       </div>
     </section>
   </div>

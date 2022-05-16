@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-full fixed top-0 left-0 z-[1000] bg-white">
+  <nav class="w-full fixed top-0 left-0 z-[1000] bg-white" :class="[scrollPosition < 1 ? '' : 'shadow-lg']">
     <section class="header py-[10px]">
       <div class="xl:mx-[180px] lg:mx-[90px] md:mx-[35px] mx-6 flex items-center lg:justify-end justify-between">
         <button class="search flex items-center lg:hidden">
@@ -102,7 +102,7 @@
 
       </div>
     </section>
-    <div class="mobile-menu z-[900] h-screen w-screen absolute bg-brandGreen transition-all" :class="[menuOpen ? 'translate-x-[1000px]' : 'translate-x-0']">
+    <div class="mobile-menu z-[900] h-screen w-screen absolute bg-brandGreen transition-all" :class="[menuOpen ? 'translate-x-[4000px]' : 'translate-x-0']">
 
     </div>
   </nav>
@@ -110,7 +110,7 @@
 
 <script>
 import Logo from '@/components/LogoComponent.vue'
-import { ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 
 export default {
   components: {
@@ -118,8 +118,21 @@ export default {
   },
   setup () {
     const menuOpen = ref(true)
+    const scrollPosition = ref(window.scrollY)
+
+    const onScrollChange = () => {
+      scrollPosition.value = window.scrollY
+    }
+
+    onMounted(() => {
+      window.addEventListener('scroll', onScrollChange)
+    })
+    onUnmounted(() => {
+      window.removeEventListener('scroll', onScrollChange)
+    })
     return {
-      menuOpen
+      menuOpen,
+      scrollPosition
     }
   }
 }
