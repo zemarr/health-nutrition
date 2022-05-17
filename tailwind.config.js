@@ -8,9 +8,11 @@ module.exports = {
         metro: ['Metropolis', 'sans-serif']
       },
       colors: {
-        brandGreen: '#00A600',
+        greenDark: '#00A600',
         greenDark3: '#F7FCF7',
-        greenDark10: '#E6F6E6'
+        greenDark10: '#E6F6E6',
+        grayLight: '#CCCCCC',
+        bronze: '#F38B10'
       }
     }
   },

@@ -1,6 +1,6 @@
 <template>
-  <nav class="w-full fixed top-0 left-0 z-[1000] bg-white xl:px-[180px] lg:px-[90px] md:px-[35px] px-6" :class="[scrollPosition < 1 ? '' : 'shadow-lg']">
-    <section class="header py-[10px]">
+  <nav class="w-full fixed top-0 left-0 z-[1000] bg-white" :class="[scrollPosition < 1 ? '' : 'shadow-lg']">
+    <section class="header py-[10px] bg-[#F4F4F4] xl:px-[180px] lg:px-[90px] md:px-[35px] px-6">
       <div class="max-w-[1440px] mx-auto flex items-center lg:justify-end justify-between">
         <button class="search flex items-center lg:hidden">
           <span class="text-black font-bold h-3 w-3 mr-2">
@@ -13,7 +13,7 @@
         <button class="font-bold text-[10px] leading-[10px]">TRACK YOUR ORDER</button>
       </div>
     </section>
-    <section class="navigation py-3">
+    <section class="navigation py-3 xl:px-[180px] lg:px-[90px] md:px-[35px] px-6">
       <div class="max-w-[1440px] mx-auto">
         <div class="grid grid-cols-2 gap-8">
           <div class="left flex items-center justify-between">
@@ -83,12 +83,12 @@
               </li>
               <li>
                 <button @click.prevent="menuOpen = !menuOpen" class="hamburger lg:hidden flex flex-col items-center justify-between z-[1000]">
-                  <span v-show="menuOpen" class="w-6 h-6 text-black flex items-start justify-center">
+                  <span v-show="!menuOpen" class="w-6 h-6 text-black flex items-start justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 24 24">
                       <path fill="currentColor" d="M3.71,16.29a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21,1,1,0,0,0-.21.33,1,1,0,0,0,.21,1.09,1.15,1.15,0,0,0,.33.21.94.94,0,0,0,.76,0,1.15,1.15,0,0,0,.33-.21,1,1,0,0,0,.21-1.09A1,1,0,0,0,3.71,16.29ZM7,8H21a1,1,0,0,0,0-2H7A1,1,0,0,0,7,8ZM3.71,11.29a1,1,0,0,0-1.09-.21,1.15,1.15,0,0,0-.33.21,1,1,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33,1.15,1.15,0,0,0,.33.21.94.94,0,0,0,.76,0,1.15,1.15,0,0,0,.33-.21,1.15,1.15,0,0,0,.21-.33.94.94,0,0,0,0-.76A1,1,0,0,0,3.71,11.29ZM21,11H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2ZM3.71,6.29a1,1,0,0,0-.33-.21,1,1,0,0,0-1.09.21,1.15,1.15,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33,1.15,1.15,0,0,0,.33.21,1,1,0,0,0,1.09-.21,1.15,1.15,0,0,0,.21-.33.94.94,0,0,0,0-.76A1.15,1.15,0,0,0,3.71,6.29ZM21,16H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/>
                     </svg>
                   </span>
-                  <span v-show="!menuOpen" class="w-6 h-6 text-black flex items-start justify-center">
+                  <span v-show="menuOpen" class="w-6 h-6 text-black flex items-start justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 24 24">
                       <path fill="currentColor" d="M3.5,6a1,1,0,1,0,1,1A1,1,0,0,0,3.5,6Zm4,2h14a1,1,0,0,0,0-2H7.5a1,1,0,0,0,0,2Zm0,3a1,1,0,1,0,1,1A1,1,0,0,0,7.5,11Zm4,5a1,1,0,1,0,1,1A1,1,0,0,0,11.5,16Zm10-5h-10a1,1,0,0,0,0,2h10a1,1,0,0,0,0-2Zm0,5h-6a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Z"/>
                     </svg>
@@ -102,7 +102,7 @@
 
       </div>
     </section>
-    <div class="mobile-menu z-[900] h-screen w-screen absolute bg-brandGreen transition-all" :class="[menuOpen ? 'translate-x-[4000px]' : 'translate-x-0']">
+    <div class="mobile-menu z-[900] h-screen w-screen absolute left-0 bg-greenDark transition-all" :class="[menuOpen ? 'translate-x-[5000px]' : 'translate-x-0']">
 
     </div>
   </nav>
