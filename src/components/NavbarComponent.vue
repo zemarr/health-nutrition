@@ -17,7 +17,9 @@
       <div class="max-w-[1440px] mx-auto">
         <div class="grid grid-cols-2 gap-8">
           <div class="left flex items-center justify-between">
-            <Logo />
+            <router-link to="/">
+              <Logo />
+            </router-link>
             <ul class="nav-items lg:flex hidden items-center justify-between font-bold text-[14px] leading-[14px] tracking-[1px]">
               <li class="flex items-center justify-center mx-[6px] cursor-pointer">
                 SHOP

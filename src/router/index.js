@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import SignUp from '../views/SignUp.vue'
+import SignUp from '../views/auth/SignUp.vue'
 import DashboardLayout from '../components/layouts/DashboardLayout.vue'
 
 const routes = [
