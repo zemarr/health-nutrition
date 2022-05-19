@@ -1,6 +1,6 @@
 <template>
   <div class="footer relative w-screen">
-    <div class="bg-greenDark10 py-12 grid lg:grid-cols-3 grid-cols-1 lg:gap-9 gap-12 xl:px-[180px] lg:px-[90px] md:px-[35px] px-6">
+    <div class="bg-greenDark10 py-12 grid lg:grid-cols-3 grid-cols-1 items-start lg:gap-9 gap-12 xl:px-[180px] lg:px-[90px] md:px-[35px] px-6">
       <div class="flex items-center">
         <span class="mr-[28px]">
           <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@
             <span class="sm:hidden block text-light">Sign up to get healthier and<br> receive <span class="text-bold">15% off your first order</span></span>
           </h5>
           <div class="flex items-center rounded-[8px] border-greenDark border-[2px] max-h-12 overflow-hidden mb-12 max-w-[max-content]">
-            <input type="text" placeholder="Your Email..." class="max-w-[208px] py-4 px-6 placeholder-grayLight text-black text-sm border border-borderGray w-full focus:outline-none focus:border-none hover:border-none focus:ring-0">
+            <input type="text" placeholder="Your Email..." class="max-w-[208px] py-4 px-6 placeholder-grayLight text-black text-sm w-full focus:outline-none focus:border-none hover:border-none focus:ring-0">
             <button class="relative flex items-center bg-greenDark text-white text-[14px] leading-[14px] max-w-[136px] py-[17px] px-[38px] w-full">
             Sign up
             <span class="absolute right-[19px]">
@@ -131,8 +131,8 @@
         </div>
       </div>
       <div class="relative mt-12 mb-6">
-        <p class="font-light text-[14px] leading-[14px] text-center mb-3">2021 Health Nutrition Limited. All Rights Reserved.</p>
-        <p class="max-w-[986px] mx-auto font-light text-[11px] leading-[13.2px] text-center text-[#999999]">*These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. These products do not require a prescription or doctor approval as they are herbal and do not contain any prescription ingredients. Results in the Testimonials may not be typical and your results may vary. Not all people will obtain the same results. These products are intended to be used in conjunction with a healthy diet and regular exercise. Consult your physician before starting any diet, exercise program or taking any supplements to avoid any health issues.</p>
+        <p class="font-light md:text-[14px] text-[13px] md:leading-[14px] leading-[13px] text-center mb-3">2021 Health Nutrition Limited. All Rights Reserved.</p>
+        <p class="max-w-[896px] mx-auto font-light text-[11px] leading-[13.2px] text-center text-[#999999]">*These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. These products do not require a prescription or doctor approval as they are herbal and do not contain any prescription ingredients. Results in the Testimonials may not be typical and your results may vary. Not all people will obtain the same results. These products are intended to be used in conjunction with a healthy diet and regular exercise. Consult your physician before starting any diet, exercise program or taking any supplements to avoid any health issues.</p>
       </div>
     </div>
   </div>

@@ -34,7 +34,7 @@ const routes = [
   },
   {
     path: '/sign-up',
-    name: 'Sign Un',
+    name: 'Sign Up',
     component: SignUp
   }
 ]

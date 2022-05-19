@@ -12,6 +12,8 @@ module.exports = {
         greenDark3: '#F7FCF7',
         greenDark10: '#E6F6E6',
         grayLight: '#CCCCCC',
+        grayLighter: '#F4F4F4',
+        grayDark: '#555555',
         bronze: '#F38B10'
       }
     }

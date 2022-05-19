@@ -1,7 +1,7 @@
 <template>
   <div class="relative max-w-[1440px] mx-auto h-[max-content]">
     <Navbar />
-    <div class="translate-y-[95px] md:translate-y-[93px] pb-[150px]">
+    <div class="pt-[95px] md:pt-[93px]">
       <router-view/>
     </div>
     <Footer />
