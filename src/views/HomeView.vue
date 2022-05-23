@@ -9,14 +9,16 @@
           <p class="font-light text-[24px] leading-[33.6px] mb-6">
             <span class="font-bold text-[24px] leading-[33.6px]">We and our community help you achieve a healthy lifestyle</span> through our high quality supplements, workouts & diet plans while = staying affordable.
           </p>
-          <button class="relative flex items-center bg-greenDark text-white rounded-[8px] max-w-[348px] py-4 px-[90px] w-full">
-            Become a member
-            <span class="absolute right-[19px]">
-              <svg class="text-white" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
-              </svg>
-            </span>
-          </button>
+          <router-link to="/sign-up">
+            <button class="relative flex items-center bg-greenDark text-white rounded-[8px] max-w-[348px] py-4 px-[90px] w-full">
+              Become a member
+              <span class="absolute right-[19px]">
+                <svg class="text-white" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"/>
+                </svg>
+              </span>
+            </button>
+          </router-link>
         </div>
       </div>
       <div class="right grid grid-cols-3">
