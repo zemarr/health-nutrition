@@ -5,8 +5,8 @@
       <p class="text-center md:text-[18px] text-[16px] md:leading-[25.2px] leading-[22.4px]">We need to know you better to be able to create a unique experience for you.</p>
 
       <div class="relative mt-[42px]">
-        <div class="progressbar max-w-[327px] md:max-w-[400px] mx-auto mb-[62px] h-[5px] bg-grayLight w-full">
-          <div class="progress h-full w-[0%] bg-greenDark"></div>
+        <div class="progressbar relative max-w-[327px] md:max-w-[400px] mx-auto mb-[62px] h-[5px] bg-grayLight w-full">
+          <div class="progress absolute top-0 left-0 h-full w-[14.28%] max-w-[100%] bg-greenDark"></div>
         </div>
         <transition name="fadeInOut">
           <div v-show="progressCount === 1" class="content relative">
@@ -38,7 +38,7 @@
                 </div>
               </div>
               <div class="flex flex-col items-center justify-center mt-16">
-                <button @click="nextQuestion" class="relative flex items-center justify-center bg-greenDark text-white text-[14px] leading-[14px] max-w-[252px] py-4 px-[65px] w-full rounded-[8px]">
+                <button @click="nextQuestion(1)" class="relative flex items-center justify-center bg-greenDark text-white text-[14px] leading-[14px] max-w-[252px] py-4 px-[65px] w-full rounded-[8px]">
                 NEXT
                 <span class="absolute right-[19px]">
                   <svg class="text-white" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -114,7 +114,7 @@
                     </span>
                     BACK
                   </button>
-                  <button @click="nextQuestion" class="relative flex items-center justify-center bg-greenDark text-white text-[14px] leading-[14px] max-w-[252px] py-4 px-[65px] w-full rounded-[8px]">
+                  <button @click="nextQuestion(2)" class="relative flex items-center justify-center bg-greenDark text-white text-[14px] leading-[14px] max-w-[252px] py-4 px-[65px] w-full rounded-[8px]">
                   NEXT
                   <span class="absolute right-[19px]">
                     <svg class="text-white" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -459,16 +459,13 @@
 </template>
 
 <script>
-import { reactive, ref } from 'vue'
+import { onMounted, reactive, ref } from 'vue'
 
 export default {
   setup () {
-    // eslint-disable-next-line no-unused-vars
-    // const contents = document.querySelectorAll('.content')
-    const progressBar = document.querySelector('.progressbar')
-    const progress = document.querySelector('.progress')
     const isMetric = ref(true)
     const progressCount = ref(1)
+    const progressValue = ref(14.28)
 
     const data = reactive({
       gender: 'male',
@@ -476,25 +473,44 @@ export default {
       metric_measurement: isMetric,
       height: '',
       weight: '',
-      goal: '',
+      goal: 'Build muscle',
       weight_goal: '',
-      training_experience: ''
+      training_experience: 'Beginner'
     })
 
-    const nextQuestion = () => {
+    onMounted(() => {
+      // init progress width
+      const progressBar = ref(document.querySelector('.progress'))
+      progressBar.value.style.width = `${14.28 * (progressCount.value)}%`
+    })
+
+    const nextQuestion = async (question) => {
+      const progressBar = document.querySelector('.progress')
+      // update calculations
+      const update = () => {
+        progressValue.value = 14.28 * progressCount.value
+        return progressValue.value
+      }
       if (progressCount.value < 7) {
         progressCount.value++
+        progressBar.style.width = `${update()}%`
       }
     }
-    const previousQuestion = () => {
+    const previousQuestion = async () => {
+      const progressBar = document.querySelector('.progress')
+      // update calculations
+      const update = () => {
+        progressValue.value = progressValue.value - 14.28
+        return progressValue.value
+      }
       if (progressCount.value > 1) {
         progressCount.value--
+        progressBar.style.width = `${update()}%`
       }
     }
 
     return {
-      progressBar,
-      progress,
+      // progress,
       data,
       isMetric,
       progressCount,
@@ -536,6 +552,11 @@ export default {
   color: #00A600;
   font-weight: 600;
   border: solid 2px #00A600
+}
+
+.progress {
+  width: 0;
+  transition: all .4s ease-in-out;
 }
 
 .fadeInOut-enter-from {
