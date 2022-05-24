@@ -16,7 +16,7 @@ const routes = [
     component: DashboardLayout,
     children: [
       {
-        path: '',
+        path: 'home',
         name: 'Dashboard',
         component: () => import('../views/dashboard/DashboardHome')
       },

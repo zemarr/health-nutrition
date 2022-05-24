@@ -27,7 +27,7 @@
     </div>
     <div class="flex items-center py-3 md:w-[max-content] xl:px-[180px] lg:px-[90px] md:px-[35px] px-6 md:mx-auto overflow-x-auto md:overflow-x-hidden text-[#999999]">
       <div class="mx-3 whitespace-nowrap">
-        <router-link to="/dashboard" v-slot="{ href, navigate, isActive }">
+        <router-link to="/dashboard/home" v-slot="{ href, navigate, isActive }">
           <a :href="href" @click="navigate" :class="isActive ? 'border-b-[3px] border-greenDark text-black' : 'border-[transparent] text-[#999999]'">
             dashboard
           </a>
