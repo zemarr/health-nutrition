@@ -1,5 +1,5 @@
 <template>
-  <div class="footer relative w-screen">
+  <div class="footer relative w-full">
     <div class="bg-greenDark10 py-12 grid lg:grid-cols-3 grid-cols-1 items-start lg:gap-9 gap-12 xl:px-[180px] lg:px-[90px] md:px-[35px] px-6">
       <div class="flex items-center">
         <span class="mr-[28px]">

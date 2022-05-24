@@ -169,6 +169,7 @@
                       class="px-4 py-4 mt-1 text-[15px] leading-[17.78px] font-Rubik placeholder-grayLight text-black text-sm border border-borderGray rounded-[8px] w-full focus:outline-none focus:border-black hover:border-black focus:ring-0"
                       placeholder="000"
                       style="transition: 'all .15s ease'"
+                      max="10000"
                       v-model="data.height"
                     />
                     <span class="font-bold text-[16px] leading-[22.4px] text-grayDark absolute top-[15px] right-[15px] bg-white py-1 px-2">
@@ -201,6 +202,7 @@
                         class="px-4 py-4 mt-1 text-[15px] leading-[17.78px] font-Rubik placeholder-grayLight text-black text-sm border border-borderGray rounded-[8px] w-full focus:outline-none focus:border-black hover:border-black focus:ring-0"
                         placeholder="00"
                         style="transition: 'all .15s ease'"
+                        max="1000"
                         v-model="data.weight"
                       />
                       <span class="font-bold text-[16px] leading-[22.4px] text-grayDark absolute top-[15px] right-[15px] bg-white py-1 px-2">
@@ -316,6 +318,7 @@
                       class="px-4 py-4 mt-1 text-[15px] leading-[17.78px] font-Rubik placeholder-grayLight text-black text-sm border border-borderGray rounded-[8px] w-full focus:outline-none focus:border-black hover:border-black focus:ring-0 text-center"
                       placeholder="00"
                       style="transition: 'all .15s ease'"
+                      max="10000"
                       v-model="data.weight_goal"
                     />
                     <span class="font-bold text-[16px] leading-[22.4px] text-grayDark absolute top-[15px] right-[15px] bg-white py-1 px-2">

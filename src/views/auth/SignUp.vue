@@ -377,14 +377,14 @@
                 <div class="relative">
                   <div class="flex-col border-[1px] border-grayLight rounded-[8px] overflow-hidden">
                     <div class="top h-[46px]">
-                      <input type="number" placeholder="1234 1234 1234 1234" class="max-w-full h-full py-4 px-4 placeholder-grayLight text-black text-sm w-full focus:outline-none focus:border-none hover:border-none focus:ring-0">
+                      <input type="number" maxlength="16" max="9999999999999999" placeholder="1234 1234 1234 1234" class="max-w-full h-full py-4 px-4 placeholder-grayLight text-black text-sm w-full focus:outline-none focus:border-none hover:border-none focus:ring-0">
                     </div>
                     <div class="bottom grid grid-cols-2 border-t-[1px] border-grayLight">
                       <div class="left border-r-[1px] border-grayLight">
                         <input type="month" placeholder="MM / YY" value="2022-05" min="2020-05" max="2030-12" class="max-w-full h-full py-4 px-4 placeholder-grayLight text-black text-sm w-full focus:outline-none focus:border-none hover:border-none focus:ring-0">
                       </div>
                       <div class="right">
-                        <input type="number" placeholder="CCV" class="max-w-full h-full py-4 px-4 placeholder-grayLight text-black text-sm w-full focus:outline-none focus:border-none hover:border-none focus:ring-0">
+                        <input type="number" max="999" placeholder="CCV" class="max-w-full h-full py-4 px-4 placeholder-grayLight text-black text-sm w-full focus:outline-none focus:border-none hover:border-none focus:ring-0">
                       </div>
                     </div>
                   </div>
