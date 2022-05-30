@@ -6,7 +6,22 @@
 
       <div class="relative mt-[42px]">
         <div class="progressbar relative max-w-[327px] md:max-w-[400px] mx-auto mb-[62px] h-[5px] bg-grayLight w-full">
+          <span
+            class="text-[10px] leading-[10px] text-greenDark font-bold absolute -top-4 left-0 mb-2"
+            >BASIC</span
+          >
+          <span
+            class="text-[10px] leading-[10px] font-bold absolute -top-4 left-[57.12%] mb-2"
+            :class="progressValue >= 57 ? 'text-greenDark' : 'text-grayLight'"
+            >GOAL</span
+          >
           <div class="progress absolute top-0 left-0 h-full w-[14.28%] max-w-[100%] bg-greenDark"></div>
+          <span
+            class="progressLabel block text-[10px] leading-[10px] text-greenDark absolute -bottom-4 w-[max-content]"
+          >
+            {{ progressCount > 4 ? progressCount - 4 : progressCount }} of
+            {{ progressCount > 4 ? '3' : '4' }}
+          </span>
         </div>
         <transition name="fadeInOut">
           <div v-show="progressCount === 1" class="content relative">
@@ -485,10 +500,13 @@ export default {
       // init progress width
       const progressBar = ref(document.querySelector('.progress'))
       progressBar.value.style.width = `${14.28 * (progressCount.value)}%`
+      const progressLabel = ref(document.querySelector('.progressLabel'))
+      progressLabel.value.style.left = `${14.28 * progressCount.value / 2}%`
     })
 
     const nextQuestion = async (question) => {
       const progressBar = document.querySelector('.progress')
+      const progressLabel = ref(document.querySelector('.progressLabel'))
       // update calculations
       const update = () => {
         progressValue.value = 14.28 * progressCount.value
@@ -497,10 +515,15 @@ export default {
       if (progressCount.value < 7) {
         progressCount.value++
         progressBar.style.width = `${update()}%`
+        progressLabel.value.style.left = `${14.28 * progressCount.value}%`
+      }
+      if (progressCount.value === 7) {
+        progressLabel.value.style.left = '93.43%'
       }
     }
     const previousQuestion = async () => {
       const progressBar = document.querySelector('.progress')
+      const progressLabel = ref(document.querySelector('.progressLabel'))
       // update calculations
       const update = () => {
         progressValue.value = progressValue.value - 14.28
@@ -509,6 +532,10 @@ export default {
       if (progressCount.value > 1) {
         progressCount.value--
         progressBar.style.width = `${update()}%`
+        progressLabel.value.style.left = `${14.28 * progressCount.value}%`
+      }
+      if (progressCount.value < 2) {
+        progressLabel.value.style.left = `${14.28 / 2}%`
       }
     }
 
@@ -517,6 +544,7 @@ export default {
       data,
       isMetric,
       progressCount,
+      progressValue,
       nextQuestion,
       previousQuestion
     }
@@ -560,6 +588,9 @@ export default {
 .progress {
   width: 0;
   transition: all .4s ease-in-out;
+}
+.progressLabel {
+  transition: all 0.4s ease-in-out;
 }
 
 .fadeInOut-enter-from {
